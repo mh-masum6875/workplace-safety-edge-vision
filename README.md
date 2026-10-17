@@ -1,4 +1,4 @@
-# 🛡️ SafeGuard Vision AI: Edge-Accelerated HSE Safety, Fall Detection & Active Threat Intelligence
+# Workplace Safety Vision: PPE Compliance, Fall Detection and Threat Detection at the Edge
 
 [![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-GPU%20Accelerated-005CED?logo=onnx&logoColor=white)](https://onnxruntime.ai/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Custom%20Trained-00FFFF)](https://ultralytics.com/)
@@ -9,14 +9,14 @@ A high-throughput edge computer vision framework designed for industrial health 
 
 ---
 
-## 📸 System Capabilities & Detections
+## System Capabilities & Detections
 
 ### 1. Construction Site PPE & Helmet Live Compliance
 Simultaneous multi-worker detection tracking Helmet and Safety Vest compliance with live counter overlays.
 ![PPE & Helmet Compliance Live Count](assets/ppe_helmet_compliance_live_count.png)
 
 ### 2. Real-Time Human Fall Detection
-Instant alert triggering upon rapid vertical velocity and aspect-ratio collapse (**98% accuracy**).
+Instant alert triggering upon rapid vertical velocity and aspect-ratio collapse.
 ![Human Fall Detection Alert](assets/human_fall_detection_alert.png)
 
 ### 3. Active Threat & Weapon Identification
@@ -34,25 +34,25 @@ Spatial clustering algorithm estimating pedestrian volume and gathering alerts.
 
 ---
 
-## 🔬 Core Capabilities
+## Core Capabilities
 
 ### 1. PPE Spatial Intersection Attribution
 Rather than just detecting loose helmets, the system implements an IoU and centroid containment algorithm (`is_ppe_on_person`):
 $$\text{Intersection}(B_{\text{person}}, B_{\text{gear}}) > 0 \quad \land \quad C_{\text{gear}} \in B_{\text{person}}$$
 Accurately maps helmets and vests to unique person track IDs to generate compliant vs non-compliant audit numbers.
 
-### 2. Human Fall Event Trigger (98% Accuracy)
+### 2. Human Fall Event Trigger
 Monitors bounding box bounding geometry:
 - Aspect ratio inversion: $\frac{\text{Width}}{\text{Height}} > 1.2$
 - Vertical centroid acceleration: $\frac{\Delta C_y}{\Delta t} > V_{\text{thresh}}$
 - Ground proximity validation to eliminate false positives from sitting or tying shoelaces.
 
 ### 3. Edge-Optimized ONNX Runtime Inference
-Optimized with FP16 precision via ONNX Runtime GPU, achieving sub-20ms per-frame latency on edge devices.
+Optimized with FP16 precision via ONNX Runtime GPU, for efficient edge deployment.
 
 ---
 
-## 🛠️ Quickstart
+## Quickstart
 
 ```bash
 # Clone the repository
@@ -83,7 +83,7 @@ python src/weapon_detection_onnx.py --source data/security_feed.mp4 --weights mo
 
 ---
 
-## 🏭 Extended Production Analytics & Proven Capabilities
+## Related Analytics
 
 Beyond the open-source sample modules provided in this repository, the underlying algorithmic framework has been architected, validated, and deployed across **25+ specialized industrial safety and physical security analytics**:
 
@@ -109,9 +109,9 @@ Beyond the open-source sample modules provided in this repository, the underlyin
 - **Self-Harm & Incident Alerting**: Bounding-box aspect ratio inversion and suspension tracking for emergency alerts.
 
 ### 4. Facility Crowd Dynamics & Emergency Egress
-- **Bi-Directional Access Counting**: High-accuracy line transit counting for facility entry/exit audit trails.
+- **Bi-Directional Access Counting**: Line-crossing counting for facility entry/exit audit trails.
 - **Crowd Congestion & Spatial Heatmaps**: Density gradient calculation highlighting bottleneck corridors in real-time.
 - **Emergency Egress Obstruction**: Automated alerts when emergency exits, fire doors, or escape stairs are blocked by objects or personnel.
 
-## 📄 License
+## License
 This project is licensed under the MIT License.
