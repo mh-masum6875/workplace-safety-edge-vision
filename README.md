@@ -19,7 +19,7 @@ Simultaneous multi-worker detection tracking Helmet and Safety Vest compliance w
 Instant alert triggering upon rapid vertical velocity and aspect-ratio collapse.
 ![Human Fall Detection Alert](assets/human_fall_detection_alert.png)
 
-### 3. Active Threat & Weapon Identification
+### 3. Security Hazard & Prohibited Object Identification
 Sub-second detection of firearms and bladed weapons in indoor and retail environments.
 ![Weapon Detection Indoor](assets/weapon_threat_detection_indoor.png)
 ![Weapon Detection Retail](assets/weapon_threat_detection_retail.png)
