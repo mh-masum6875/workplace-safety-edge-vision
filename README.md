@@ -80,5 +80,38 @@ python src/weapon_detection_onnx.py --source data/security_feed.mp4 --weights mo
 
 ---
 
+
+---
+
+## 🏭 Extended Production Analytics & Proven Capabilities
+
+Beyond the open-source sample modules provided in this repository, the underlying algorithmic framework has been architected, validated, and deployed across **25+ specialized industrial safety and physical security analytics**:
+
+### 1. Worker PPE & Personal Compliance
+- **Full PPE Spatial Attribution**: Simultaneous detection and spatial IoU mapping of Helmets, Safety Vests, and Persons.
+- **Headwear Compliance**: Specialized Cap and Hairnet detection algorithms.
+- **Respiratory Health**: Face mask usage monitoring in sterile and high-dust zones.
+- **Access & Identity Verification**: Automated ID card, lanyard, and worker badge localization.
+- **Uniform Compliance**: Automated detection of organizational dress codes, hi-vis jackets, and protective footwear.
+- **Station Availability**: Dwell-time monitoring for machine operators and guard presence verification.
+
+### 2. Heavy Machinery & Critical Danger Zones
+- **Working at Heights**: Detection of elevated workers, ladder usage, and harness lanyard tethering verification.
+- **Crane Operational Zone Breaches**: Dynamic exclusion polygons warning personnel entering active crane swing radiuses.
+- **Forklift-Pedestrian Collision Prevention**: Real-time proximity calculation between mobile machinery and foot traffic.
+- **Worker Fatigue & Drowsiness**: Posture-based drowsiness, prolonged head dropping, and worker idle timeout detection.
+
+### 3. Physical Security & Threat Interception
+- **Perimeter Intrusion & Wall Climbing**: Multi-point tripwire and polygon intrusion detection with height-scaling.
+- **Camera Tampering Detection**: Real-time alerting for lens spraying, physical covering, camera displacement, and blinding.
+- **Projectile & Stone Throwing**: Rapid arm trajectory tracking and thrown object vector detection.
+- **Physical Altercation & Violence**: Interaction bounding box overlap and chaotic movement analysis for fight detection.
+- **Self-Harm & Incident Alerting**: Bounding-box aspect ratio inversion and suspension tracking for emergency alerts.
+
+### 4. Facility Crowd Dynamics & Emergency Egress
+- **Bi-Directional Access Counting**: High-accuracy line transit counting for facility entry/exit audit trails.
+- **Crowd Congestion & Spatial Heatmaps**: Density gradient calculation highlighting bottleneck corridors in real-time.
+- **Emergency Egress Obstruction**: Automated alerts when emergency exits, fire doors, or escape stairs are blocked by objects or personnel.
+
 ## 📄 License
 This project is licensed under the MIT License.
