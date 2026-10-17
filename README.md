@@ -1,5 +1,7 @@
 # Workplace Safety Vision: PPE Compliance, Fall Detection and Threat Detection at the Edge
 
+Part of my [applied computer vision portfolio](https://github.com/mh-masum6875/enterprise-computer-vision-solutions).
+
 [![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-GPU%20Accelerated-005CED?logo=onnx&logoColor=white)](https://onnxruntime.ai/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Custom%20Trained-00FFFF)](https://ultralytics.com/)
 [![Edge AI](https://img.shields.io/badge/Deployment-Edge%20%26%20CCTV-green)](https://github.com)
@@ -56,8 +58,8 @@ Optimized with FP16 precision via ONNX Runtime GPU, for efficient edge deploymen
 
 ```bash
 # Clone the repository
-git clone https://github.com/mh-masum6875/workplace-safety-edge-vision.git
-cd workplace-safety-edge-vision
+git clone https://github.com/mh-masum6875/workplace-safety-vision.git
+cd workplace-safety-vision
 
 # Install dependencies
 pip install -r requirements.txt
